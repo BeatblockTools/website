@@ -13,7 +13,7 @@ const contributors = [
         title: 'Developer'
     },
     {
-        name: 'cgytrus',
+        name: 'ConfiG',
         icon: 'cgytrus.png',
         title: 'Contributor'
     }
