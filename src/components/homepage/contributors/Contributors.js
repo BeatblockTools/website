@@ -1,4 +1,5 @@
 import styles from './index.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const contributors = [
     {
@@ -34,7 +35,7 @@ export default function Contributors() {
 function Contributor({ name, icon, title }) {
     return (
         <div className={ styles.contributor }>
-            <img src={`/img/contributors/${icon}`} />
+            <img src={useBaseUrl(`/img/contributors/${icon}`)} />
             <p className={styles.name}>{ name }</p>
             <p className={styles.title}>{ title }</p>
         </div>

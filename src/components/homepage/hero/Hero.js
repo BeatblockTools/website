@@ -1,3 +1,4 @@
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
 export default function Hero() {
@@ -5,7 +6,7 @@ export default function Hero() {
     <section className={styles.fullscreensection}>
       <div className={styles.center}>
         <img className={styles.icon}
-          src='/img/bbp.png'
+          src={useBaseUrl('/img/bbp.png')}
           width={72 * 4}
           height={72 * 4}
         />
