@@ -31,3 +31,7 @@
 ::-webkit-scrollbar-corner {
   background: #1a1a1a;
 }
+
+main {
+  background: linear-gradient(130deg,rgb(19, 19, 19), rgb(24, 24, 24) 50%, rgba(28, 28, 28, 1) 100%);
+}
