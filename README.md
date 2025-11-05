@@ -1,41 +1,44 @@
 # Website
+BeatblockTools' website, built using [Docusaurus](https://docusaurus.io/).
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+# Contributing
 
-## Installation
+## Requirements
+- Git (https://git-scm.com/)
+- pnpm (https://pnpm.io/installation)
 
-```bash
-yarn
+## Getting Started
+- Fork the repo
+
+- Clone the fork
+```
+git clone https://github.com/your_name/website.git
+cd website
 ```
 
-## Local Development
-
-```bash
-yarn start
+- Add the main repo as upstream
+```
+git remote add upstream https://github.com/BeatblockTools/website.git
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```bash
-yarn build
+- Install dependencies
+```
+pnpm install
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
+- Create a new branch for your changes
+```
+git checkout -b feature/your-feature-name
 ```
 
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
+- Test your changes locally
+```
+pnpm run start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- Push the changes
+```
+git push origin feature/your-feature-name
+```
+
+- Create a pull request
