@@ -16,6 +16,11 @@ const contributors = [
         name: 'ConfiG',
         icon: 'cgytrus.png',
         title: 'Contributor'
+    },
+    {
+        name: 'Pentatrate',
+        icon: 'penta.png',
+        title: 'Contributor'
     }
 ]
 
