@@ -13,7 +13,7 @@ export default function Hero() {
         <h1 className={styles.title}>Beatblock Plus</h1>
         <p className={styles.subtitle}>Unofficial Mod Loader for Beatblock</p>
 
-        <a href="https://dps2004.github.io/freebeatblock/"
+        <a href={useBaseUrl('/docs/intro')}
           className={[styles.button, styles.docs].join(' ')}
         >Documentation</a>
 
