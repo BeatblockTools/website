@@ -1,10 +1,13 @@
 .footer {
-    color: rgba(255, 255, 255, 0.3);
     text-align: center;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: normal;
     margin-bottom: 0;
+}
+
+p.footer {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .section {
