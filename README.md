@@ -12,7 +12,7 @@ BeatblockTools' website, built using [Docusaurus](https://docusaurus.io/).
 
 - Clone the fork
 ```
-git clone https://github.com/BeatblockTools/website.git
+git clone https://github.com/<Your Name>/<Fork's Name>.git
 cd website
 ```
 
