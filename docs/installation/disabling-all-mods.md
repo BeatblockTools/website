@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Disabling Mods
+# Disabling All Mods
 
 To temporarily disable all mods, open the properties menu of Beatblock.
 
