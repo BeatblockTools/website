@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Disabling the terminal
+# Disabling the Terminal
 
 To disable the lovely-injector terminal that opens with the game, open the properties menu of Beatblock.
 
