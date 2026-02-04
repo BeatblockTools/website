@@ -1,10 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 # Injecting Assets
-
-This guide covers the usage of BeatblockPlus' asset injector.
 
 # Figuring out the correct path
 To inject your assets correctly. You must know how Lua's tables work. It won't be covered in this guide as there are thousands of Lua guides online.\
