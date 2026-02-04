@@ -26,7 +26,7 @@ This should be used when you only need text, number, and boolean fields. Simply 
   }
 }
 ```
-![image](https://github.com/user-attachments/assets/16473dc9-1a99-4a1f-b022-6bd4f7ff33f7)
+![auto-generated-config](assets/auto-generated-config.png)
 
 To access the value: `mods["beatblock-plus"].config.NumberOption`
 
@@ -41,4 +41,4 @@ if imgui.Button("Click Me") then
   print("I was clicked!")
 end
 ```
-![image](https://github.com/user-attachments/assets/fab15ae6-8f80-4a15-99fd-a926069b1cac)
+![advanced-config](assets/advanced-config.png)
