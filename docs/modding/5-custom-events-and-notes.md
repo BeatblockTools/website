@@ -40,26 +40,22 @@ description = [[Parameters:
 # Loading Entities
 Entities are almost everything in the game. Blocks, Cranky, particles and some level backgrounds like in Lawrence and Terabyte are all entities.\
 If you are adding a custom note, the note will not work without an entity.\
-First, create a `.lua` file inside `./Mods/your-mod/entities/`. Then paste the following template inside:
-```lua
+First, create a `.lua` file inside `./Mods/your-mod/entities/`. Paste the following template inside:
+```jsx title="Mods/your-mod/entities/MyCustomEntity.lua"
 MyCustomEntity = class('MyCustomEntity', Entity)
 
-function MyCustomEntity:initialize(params)
-    -- default variables
-    self.myNum = 5
+function MyCustomEntity:initialize(params) -- called when the entity is created
     Entity.initialize(self, params)
 end
 
-function MyCustomEntity:update(dt)
-    -- myNum gets increased by 1 every frame
-    self.myNum = self.myNum + 1
+function MyCustomEntity:update(dt) -- called every frame
 end
 
-function MyCustomEntity:draw()
+function MyCustomEntity:draw() -- called every frame, after update
 end
 
 return MyCustomEntity
 ```
 - `initialize` - Called when the entity is first created. Used for declaring variables.
 - `update` - Called every frame while the entity is active.
-- `draw` - Also called every frame. Used for drawing the entity.
+- `draw` - Called every frame, after update. Used for drawing the entity on screen.
