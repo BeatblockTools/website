@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Installing Lovely Injector and BB+
+# Installing Lovely Injector and BBP
 
 This page covers the installation of **Lovely Injector** and **Beatblock Plus**.
 

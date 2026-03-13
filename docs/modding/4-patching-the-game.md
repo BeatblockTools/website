@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 4
 ---
 
 # Patching the Game
@@ -11,7 +11,7 @@ Why should you patch the game over just modifying its code? Because:
 
 We will start by creating a folder called `lovely` inside our mod folder. This folder will contain our patches. After that we will create a `.toml` file for our patch, the name can be anything.
 At the top of the `.toml` file you need to put a manifest. You can copy the format below:
-```jsx title="Mods/my-very-own-mod/lovely/patch.toml"
+```jsx title="Mods/my-first-mod/lovely/my_first_patch.toml"
 [manifest]
 version = "1.0.0"
 dump_lua = true
@@ -19,14 +19,14 @@ priority = 0
 ```
 `version` does nothing, you can ignore it.\
 `dump_lua` decides whether the changed files should be saved inside `%Appdata%/beatblock/Mods/lovely`. This is useful for debugging so leave it as true.\
-`priority` decides the order of the patch to load, higher priority patches are loaded first. Change this only if your patches are loading in the wrong order.
+`priority` decides the order of the patch to load. Higher priority patches are loaded first. Change this only if your patches are loading in the wrong order.
 
 lovely-injector has a lot of types of patches, but to keep the guide short I will only explain pattern and copy patching. These 2 will be the most useful ones.
 
 ## **Creating a Pattern Patch**
-A pattern match looks for a pattern in the code and injects code `before`, `at` or `after` it.
+A pattern patch looks for a pattern in the code and injects code `before`, `at` or `after` it.
 You can see an example below:
-```jsx title="Mods/my-very-own-mod/lovely/patch.toml"
+```jsx title="Mods/my-first-mod/lovely/patch.toml"
 [[patches]]
 [patches.pattern]
 target = "preload/states.lua"
@@ -37,12 +37,12 @@ bs.new('Mods', "Mods/beatblock-plus/mod-loader/")
 '''
 match_indent = true
 ```
-Here, it searches through the Beatblock's `preload/states.lua` file to find `bs.new('Keybinds')`. Once it's found it adds `bs.new('Mods', "Mods/beatblock-plus/mod-loader/")` after it. Pretty simple.
+Here, it searches through the Beatblock's `preload/states.lua` file to find `bs.new('Keybinds')`. Once the pattern is found, the patch adds `bs.new('Mods', "Mods/beatblock-plus/mod-loader/")` to the next line. Pretty simple. Similarly `before` puts the payload in the line above the pattern and `at` overwrites the pattern.
 
 ## **Creating a Copy Patch**
-A copy patch prepends or appends a whole .lua file to a file in the game.
+A copy patch can either `prepend` or `append` a whole .lua file to a file in the game.
 You can see an example below:
-```jsx title="Mods/my-very-own-mod/lovely/patch.toml"
+```jsx title="Mods/my-first-mod/lovely/patch.toml"
 [[patches]]
 [patches.copy]
 target = "states/Mods.lua"
@@ -51,4 +51,4 @@ sources = ["mod-loader/Mods.lua"]
 ```
 Here, it copies the contents of `mod-loader/Mods.lua` and prepends it to the contents of the `states/Mods.lua` file of Beatblock. If no such file exists, it creates a new one.
 
-If you would like to learn more about lovely-injector. Check out their GitHub repo: https://github.com/ethangreen-dev/lovely-injector
+If you would like to learn more about lovely-injector, check out their GitHub repo: https://github.com/ethangreen-dev/lovely-injector

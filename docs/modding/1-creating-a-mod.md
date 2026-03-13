@@ -6,16 +6,16 @@ sidebar_position: 1
 
 This guide covers creating a mod that appears in the mod list and does nothing.
 
-1) Create a new folder in your `Mods` folder for your mod. The suggested naming is `kebab-case` but it is not forced.
+1) Create a new folder in your `Mods` folder for your mod. It's recommended to name it in `kebab-case`, but it is not forced.
 
 ![creating folder](assets/creating-mod-folder.png)
 
-2) In your mod folder, create a new file named `mod.json`. This file will hold the metadata about your mod.
+2) In your new folder, create a new file named `mod.json`. This file will hold the metadata about your mod. You should ideally use the folder name as your id.
 
-```jsx title="Mods/my-very-own-mod/mod.json"
+```jsx title="Mods/my-first-mod/mod.json"
 {
-    "id": "my-very-own-mod",
-    "name": "My Very Own Mod",
+    "id": "my-first-mod",
+    "name": "My First Mod",
     "author": "Me!",
     "description": "This is my awesome mod! :D",
     "version": "1.0.0",
@@ -25,9 +25,11 @@ This guide covers creating a mod that appears in the mod list and does nothing.
 
 3) When you launch the game, your mod will appear in the Mods menu.
 
+![viewing first mod](assets/viewing-first-mod.png)
+
 ## Changing the Mod Icon (Optional)
 
-If you wanna use a custom mod icon, simply put your icon in `Mods/my-very-own-mod/icon.png`.\
+If you wanna use a custom mod icon, simply put your icon in `Mods/my-first-mod/icon.png`.\
 The icon must be 73x33 and has no color limitations.
 
 ## Why?

@@ -1,12 +1,12 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Injecting Assets
 
 # Figuring out the correct path
 To inject your assets correctly. You must know how Lua's tables work. It won't be covered in this guide as there are thousands of Lua guides online.\
-Beatblock loads all assets into a table when the game starts, and BB+'s asset injector works by converting the file path to a table path. For example, if your asset's path is `folder/someOtherFolder/texture.png` it would be injected as `folder.someOtherFolder = <texture.png asset>`\
+Beatblock loads all assets into a table when the game starts, and BBP's asset injector works by converting the file path to a table path. For example, if your asset's path is `folder/someOtherFolder/texture.png` it would be injected as `folder.someOtherFolder = <texture.png asset>`\
 If the asset already exists in the table, it will be overwritten by the mod, otherwise it will be loaded as a new asset.
 
 # Injecting Assets

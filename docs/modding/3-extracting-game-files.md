@@ -14,30 +14,27 @@ If you already have Python installed, you can skip this step.
 
 1) Go to the download page of [latest Python](https://www.python.org/downloads/latest).
 
-2) Scroll down and pick the version for your operating system. You can pick the "embeddable" version if you want it portable.
+2) Scroll down and pick the version for your operating system. The recommended version works fine, but you can pick the "embeddable" version if you want Python to be portable.
 
 ![downloading python](assets/downloading-python.png)
 
-3) If you downloaded the embeddable version, make sure to unzip it.
-
 ## Using the Script
 
-1) Download the [`bb-extractor` script](https://gist.github.com/erenkarakal/4bc1aca3c36fba3f4854a72d800a59a5) and place it in your game's installation folder.
+1) Download the [`bb-extractor.py`](https://gist.github.com/K4kadu/b280e27e093bd8408903e82ba1a8a384) and place it in your game's installation folder.
 
 ![bb extractor](assets/bb-extractor.png)
 
-2) Run it using the `python bb-extractor.py` command.\
+2) Depending on your Python setup, you can run it by double clicking, or by using the command `python bb-extractor.py` inside the game folder.\
 If you are using the embeddable version, navigate to your Python folder and then run
 ```
-.\python.exe "D:\SteamLibrary\steamapps\common\Beatblock\bb-extractor.py"
+.\python.exe "C:\Program Files (x86)\Steam\steamapps\common\Beatblock\bb-extractor.py"
 ```
-(You will need to tweak the command depending on your game's installation folder)
+(You might need to tweak the command depending on your game's installation folder.)
 
-3) After a few seconds, the script will be completed and you will see all of the game's files in the `dump` folder.
+3) After a few seconds, the script will be done and you will see all of the game's files in the `extracted` folder.
 
 ![game files](assets/game-files.png)
 
-
 ::::danger[Warning]
-You should never share the contents of the game's files publicly, including the `dump` folder.
+You should never share the game files publicly, including the `extracted` folder.
 ::::
