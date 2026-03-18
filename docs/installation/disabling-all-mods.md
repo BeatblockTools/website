@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+description: How to play vanilla without uninstalling your mods.
 ---
 
 # Disabling All Mods

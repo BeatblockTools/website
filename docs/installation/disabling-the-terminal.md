@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: How to get rid of the terminal window.
 ---
 
 # Disabling the Terminal

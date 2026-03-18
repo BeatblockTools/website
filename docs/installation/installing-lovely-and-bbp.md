@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+description: Installation guide for Lovely Injector and Beatblock Plus.
 ---
 
 # Installing Lovely Injector and BBP

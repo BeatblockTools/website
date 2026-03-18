@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-description: Hi
+description: How to find and download mods for Beatblock.
 ---
 
 # Installing Mods
